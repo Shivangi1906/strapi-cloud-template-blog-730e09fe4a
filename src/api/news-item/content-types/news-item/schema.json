@@ -1,13 +1,12 @@
 {
   "kind": "collectionType",
-  "collectionName": "articles",
+  "collectionName": "news_items",
   "info": {
-    "singularName": "article",
-    "pluralName": "articles",
-    "displayName": "Article",
-    "description": "Create your blog content"
+    "singularName": "news-item",
+    "pluralName": "news-items",
+    "displayName": "News Item"
   },
-  "options": {
+"options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
@@ -26,11 +25,7 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
+      "allowedTypes": ["images", "files", "videos"]
     },
     "author": {
       "type": "relation",
@@ -46,12 +41,7 @@
     },
     "blocks": {
       "type": "dynamiczone",
-      "components": [
-        "shared.media",
-        "shared.quote",
-        "shared.rich-text",
-        "shared.slider"
-      ]
+      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
     }
   }
 }
