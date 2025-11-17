@@ -28,11 +28,17 @@
     "email": {
       "type": "string"
     },
-    "articles": {
+    "article": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::article.article",
-      "mappedBy": "authors"
+      "inversedBy": "authors"
+    },
+    "news_item": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::news-item.news-item",
+      "inversedBy": "authors"
     }
   }
 }

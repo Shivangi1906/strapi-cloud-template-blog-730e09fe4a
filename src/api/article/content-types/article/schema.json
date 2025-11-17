@@ -32,12 +32,6 @@
         "videos"
       ]
     },
-    "authors": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::author.author",
-      "inversedBy": "articles"
-    },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
@@ -52,6 +46,12 @@
         "shared.rich-text",
         "shared.slider"
       ]
+    },
+    "authors": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::author.author",
+      "mappedBy": "article"
     }
   }
 }
