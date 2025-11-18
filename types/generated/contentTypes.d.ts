@@ -513,7 +513,7 @@ export interface ApiAffiliateAffiliate extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     email: Schema.Attribute.Email;
     fax: Schema.Attribute.String;
-    firm: Schema.Attribute.String & Schema.Attribute.Required;
+    firm: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

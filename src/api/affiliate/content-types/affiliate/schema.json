@@ -16,9 +16,8 @@
       "required": true
     },
     "firm": {
-      "type": "string",
-      "required": true
-    },
+      "type": "string"
+        },
     "location": {
       "type": "string",
       "required": true
