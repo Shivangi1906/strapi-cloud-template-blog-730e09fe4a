@@ -690,7 +690,7 @@ export interface ApiDownloadDownload extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     media: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    price: Schema.Attribute.Integer;
+    price: Schema.Attribute.Decimal;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
